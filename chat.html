@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Buddy Chat</title>
+<link rel="stylesheet" href="styles.css">
+<nav>
+  <ul>
+      <li><a href="index.html">Bosh sahifa</a></li>
+      <li><a href="profile.html">Kabinet</a></li>
+      <li><a href="library.html">Kutubxona</a></li>
+      <li><a href="chat.html">Chat</a></li>
+      <li><a href="shared_notes.html">Ulashilgan ma'lumotlar</a></li>
+  </ul>
+</nav>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+  .chat-container { width: 80%; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .chat-window { height: 400px; overflow-y: scroll; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+  .chat-input { width: calc(100% - 90px); padding: 10px; border: 1px solid #ddd; float: left; margin-right: 10px; }
+  .send-button { width: 80px; padding: 10px; border: none; background-color: #5cb85c; color: white; cursor: pointer; float: left; }
+  .send-button:hover { background-color: #4cae4c; }
+  .clear-fix { clear: both; }
+</style>
+</head>
+<body>
+<div class="chat-container">
+  <div class="chat-window" id="chatWindow">
+    <!-- Chat messages will be displayed here -->
+  </div>
+  <input type="text" class="chat-input" id="chatInput" placeholder="Type a message...">
+  <button class="send-button" onclick="sendMessage()">Send</button>
+  <div class="clear-fix"></div>
+</div>
+<script>
+  function sendMessage() {
+    var message = document.getElementById('chatInput').value;
+    // Implement sending message to the backend service here
+    // Clear the input field after sending the message
+    document.getElementById('chatInput').value = '';
+  }
+  // Implement receiving messages from the backend service and displaying them in the chat window
+</script>
+</body>
+</html>

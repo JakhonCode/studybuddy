@@ -1,0 +1,213 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #0073b1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+header .logo span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #005582;
+    border-radius: 5px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.auth-buttons .btn {
+    background-color: #ff6f61;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.auth-buttons .btn:hover {
+    background-color: #e65a50;
+}
+
+/* Profile page styles */
+.profile-main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-header {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-top: -75px; /* Half the height of the profile picture */
+}
+
+.profile-details {
+    text-align: center;
+}
+
+.profile-details h1 {
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+}
+
+.profile-details .btn {
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.follow-btn {
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.follow-btn:hover {
+    background-color: #005582;
+}
+
+.message-btn {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.message-btn:hover {
+    background-color: #e65a50;
+}
+
+/* Profile content styles */
+.profile-content {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-nav ul li {
+    margin: 0 10px;
+}
+
+.profile-nav ul li a {
+    text-decoration: none;
+    color: #0073b1;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.profile-nav ul li a:hover, .profile-nav ul li a.active {
+    background-color: #0073b1;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer a {
+    color: #ff6f61;
+    text-decoration: none;
+}

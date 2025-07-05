@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shared Notes</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+  .notes-container { width: 80%; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .buddy-selector { margin-bottom: 20px; }
+  .editable-notes { height: 300px; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+  .change-log { margin-top: 20px; }
+  .change { margin-bottom: 5px; }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Study Buddy</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="profile.html">Kabinet</a></li>
+                <li><a href="library.html">Kutubxona</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="shared_notes.html">Ulashilgan ma'lumotlar</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="signup.html" class="btn">Ro'yxatdan o'tish</a>
+            <a href="#" class="btn">Kirish</a>
+        </div>
+    </header>
+<div class="notes-container">
+  <div class="buddy-selector">
+    <!-- Dropdown or list to select study buddy -->
+    <label for="buddySelect">Study Buddy tanlang!</label>
+    <select id="buddySelect">
+      <!-- Options will be populated based on the study buddies available -->
+    </select>
+  </div>
+  <div class="editable-notes" contenteditable="true">
+    <!-- Editable area for taking notes -->
+  </div>
+  <div class="change-log">
+    <h3>So'nggi yangilanishlar:</h3>
+    <!-- List of changes with timestamps -->
+  </div>
+</div>
+<script>
+  // JavaScript to handle real-time collaboration and display changes
+</script>
+</body>
+</html>

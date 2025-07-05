@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile Page</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+  .profile-container { width: 80%; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .profile-header { display: flex; align-items: center; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+  .profile-photo { width: 150px; height: 150px; border-radius: 50%; overflow: hidden; }
+  .profile-photo img { width: 100%; height: auto; }
+  .user-info { margin-left: 20px; }
+  .user-info h2 { margin: 0; }
+  .user-info p { color: #666; }
+  .nav-bar { list-style: none; padding: 0; display: flex; justify-content: center; margin-top: 20px; }
+  .nav-bar li { padding: 10px 20px; }
+  .nav-bar li a { text-decoration: none; color: #333; }
+  .nav-bar li a:hover { text-decoration: underline; }
+  .profile-section { margin-top: 20px; }
+  .profile-section h3 { color: #333; margin-bottom: 10px; }
+  .profile-section p { color: #666; margin: 0; }
+</style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <span>Study Buddy</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Bosh sahifa</a></li>
+            <li><a href="profile.html">Kabinet</a></li>
+            <li><a href="library.html">Kutubxona</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="shared_notes.html">Ulashilgan ma'lumotlar</a></li>
+        </ul>
+    </nav>
+    <div class="auth-buttons">
+        <a href="signup.html" class="btn">Ro'yxatdan o'tish</a>
+        <a href="#" class="btn">Kirish</a>
+    </div>
+</header>
+<div class="profile-container">
+  <div class="profile-header">
+    <div class="profile-photo">
+      <img src="profile-pic.jpg" alt="Profile Picture">
+    </div>
+    <div class="user-info">
+      <h2>Ism Familiya</h2>
+      <p>@usernamingiz</p>
+      <p>Hozirda qanday ishda/o'qishdasiz</p>
+    </div>
+  </div>
+  <ul class="nav-bar">
+    <li><a href="#">Postlar</a></li>
+    <li><a href="#">Obunachilar</a></li>
+    <li><a href="#">"Studdy Buddy"lar</a></li>
+    <li><a href="#">Layklar</a></li>
+  </ul>
+  <div class="profile-section">
+    <h3>Yosh</h3>
+    <p>Yoshingiz</p>
+  </div>
+  <div class="profile-section">
+    <h3>Fanlar</h3>
+    <p>Mukammal bilgan fanlaringiz</p>
+  </div>
+  <div class="profile-section">
+    <h3>Hobbylar</h3>
+    <p>Hobbylaringiz, nimalar bilan ko'p shug'ullanasiz</p>
+  </div>
+  <div class="profile-section">
+    <h3>O'qish joyi</h3>
+    <p>Odatda qayerda dars qilasiz</p>
+  </div>
+  <div class="profile-section">
+    <h3>Bo'sh vaqtlar</h3>
+    <p>O'rganish uchun bo'sh vaqtlaringiz. (Iltimos, har bir kun uchun alohida javob bering. <br>
+      Misol uchun: Dushanba:12:00-14:00; Seshanba:10:00-15:00 va hk.)</p>
+  </div>
+  <!-- Add more profile content here -->
+</div>
+<script>
+  // Add JavaScript here to add interactivity if needed
+</script>
+</body>
+</html>

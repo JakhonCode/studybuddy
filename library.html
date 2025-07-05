@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kutubxona</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  body { font-family: 'Arial', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
+  .library-container { width: 80%; margin: 20px auto; background-color: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  .search-section { margin-bottom: 20px; }
+  .filter-section { margin-bottom: 20px; }
+  .results-section { margin-top: 20px; }
+  input[type="text"], select { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ddd; border-radius: 5px; }
+  button { width: 100%; padding: 10px; border: none; border-radius: 5px; background-color: #5cb85c; color: white; cursor: pointer; }
+  button:hover { background-color: #4cae4c; }
+</style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span>Study Buddy</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Bosh sahifa</a></li>
+                <li><a href="profile.html">Kabinet</a></li>
+                <li><a href="library.html">Kutubxona</a></li>
+                <li><a href="chat.html">Chat</a></li>
+                <li><a href="shared_notes.html">Ulashilgan ma'lumotlar</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="signup.html" class="btn">Ro'yxatdan o'tish</a>
+            <a href="#" class="btn">Kirish</a>
+        </div>
+    </header>
+<div class="library-container">
+  <div class="search-section">
+    <input type="text" id="searchInput" placeholder="Ma'lumotlar qidirish...">
+  </div>
+  <div class="filter-section">
+    <select id="educationLevel">
+      <option value="">Darajangizni tanlang</option>
+      <option value="highschool">Maktab (quyi sinf)</option>
+      <option value="highschool">Maktab (yuqori sinf)</option>
+      <option value="college">Bakalavr 
+      </option>
+      <option value="masters">Magistratura</option>
+    </select>
+  </div>
+  <button onclick="searchResources()">Qidirish</button>
+  <div class="results-section" id="results">
+    <!-- Search results will be displayed here -->
+  </div>
+</div>
+<script>
+  function searchResources() {
+    var input = document.getElementById('searchInput').value;
+    var level = document.getElementById('educationLevel').value;
+    // Implement search and filter logic here
+    // Display results in the 'results' section
+  }
+</script>
+</body>
+</html>
